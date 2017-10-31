@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Recorder</title>
+	<!--<link rel="icon" href="imageset/favicon.png">-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/script.js"></script>
+	<script src="js/recorder.js"></script>
+	
+</head>
+<body class="text-center" style="margin: 0 auto;">
+	<h1>Audio Recorder</h1>
+	
+	<div class="container-fluid">
+		<div class="panel-group" id="accordion">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Audio 1</a>
+					</h4>
+				</div>
+				<div id="collapse1" class="panel-collapse collapse in">
+					<div id="clip1">
+						<button class="btn btn-success" onclick="startRecording(this);">record</button>
+						<button class="btn btn-danger" onclick="stopRecording(this);" disabled>stop</button>
+						<div></div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Audio 2</a>
+					</h4>
+				</div>
+				<div id="collapse2" class="panel-collapse collapse">
+					<div id="clip2">
+						<button class="btn btn-success" onclick="startRecording(this);">record</button>
+						<button class="btn btn-danger" onclick="stopRecording(this);" disabled>stop</button>
+						<div></div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Audio 3</a>
+					</h4>
+				</div>
+				<div id="collapse3" class="panel-collapse collapse">
+					<div id="clip3">
+						<button class="btn btn-success" onclick="startRecording(this);">record</button>
+						<button class="btn btn-danger" onclick="stopRecording(this);" disabled>stop</button>
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
