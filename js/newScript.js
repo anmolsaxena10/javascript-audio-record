@@ -14,6 +14,27 @@ window.onload = function init() {
 			if(recorder.state == 'inactive') createDownloadLink();
 		};
 	});
+	
+	var i;
+	
+	for(i=1 ; i<=16 ; i++){
+	$("#accordion").append("<div class=\"panel panel-default\">"+
+								"<div class=\"panel-heading\">"+
+									"<h4 class=\"panel-title\">"+
+										"<a data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapse"+i+"\">Point "+i+"</a>"+
+									"</h4>"+
+								"</div>"+
+								"<div id=\"collapse"+i+"\" class=\"panel-collapse collapse\">"+
+									"<div id=\"clip"+i+"\">"+
+										"<button class=\"btn btn-success\" onclick=\"startRecording(this);\">record</button>"+
+										"<button class=\"btn btn-danger\" onclick=\"stopRecording(this);\" disabled>stop</button>"+
+										"<div></div>"+
+									"</div>"+
+								"</div>"+
+							"</div>");
+	}
+	
+	
 };
 
 function startRecording(button){
